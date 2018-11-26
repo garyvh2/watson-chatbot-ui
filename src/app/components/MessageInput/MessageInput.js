@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import './MessageInput.css';
+import React, { Component } from 'react'
+import './MessageInput.css'
 
 class MessageInput extends Component {
-  render() {
-    return(
+  render () {
+    return (
       <div>
-        
+
       </div>
     )
   }
 }
-export default MessageInput;
+export default MessageInput

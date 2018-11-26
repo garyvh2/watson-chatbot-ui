@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import './MessageHistory.css';
+import React, { Component } from 'react'
+import './MessageHistory.css'
 
 class MessageHistory extends Component {
-  render() {
-    return(
+  render () {
+    return (
       <div>
-        
+
       </div>
     )
   }
 }
-export default MessageHistory;
+export default MessageHistory

@@ -25,6 +25,7 @@
   "devDependencies": {
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-react": "^1.1.7",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "standard": "^12.0.1"

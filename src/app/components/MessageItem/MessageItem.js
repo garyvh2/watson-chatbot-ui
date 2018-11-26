@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import './MessageItem.css';
+import React, { Component } from 'react'
+import './MessageItem.css'
 
 class MessageItem extends Component {
-  render() {
-    return(
+  render () {
+    return (
       <div>
-        
+
       </div>
     )
   }
 }
-export default MessageItem;
+export default MessageItem
