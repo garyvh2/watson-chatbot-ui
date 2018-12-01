@@ -1,5 +1,5 @@
-import React from 'react'
-// import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const MessageInputContainer = styled.div`
@@ -36,11 +36,21 @@ const Send = styled.button`
   }
 `
 
-export function MessageInput () {
+export function MessageInput ({ send }) {
+  const [message, setMessage] = useState('')
   return (
     <MessageInputContainer>
-      <Input></Input>
-      <Send>Send</Send>
+      <Input
+        value={message}
+        onChange={e => setMessage(e.target.value)}
+      ></Input>
+      <Send onClick={() => {
+        setMessage('')
+        send(message)
+      }}>Send</Send>
     </MessageInputContainer>
   )
+}
+MessageInput.propTypes = {
+  send: PropTypes.func
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { MessageInput } from './components/MessageInput/MessageInput'
-import { MessageHistory } from './components/MessageHistory/MessageHistory'
+import MessageInput from './containers/MessageInput/MessageInput'
+import MessageHistory from './containers/MessageHistory/MessageHistory'
 
 const AppContainer = styled.div``
 
