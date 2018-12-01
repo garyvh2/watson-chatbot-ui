@@ -5,7 +5,8 @@
     "plugin:react/recommended"
   ],
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "default-case": "off"
   },
   "parserOptions": {
     "ecmaFeatures": {
