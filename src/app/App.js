@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import MessageInput from './containers/MessageInput/MessageInput'
 import MessageHistory from './containers/MessageHistory/MessageHistory'
 
-const AppContainer = styled.div``
+const AppContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+`
 
 class App extends Component {
   render () {
