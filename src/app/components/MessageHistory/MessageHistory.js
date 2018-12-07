@@ -7,8 +7,9 @@ const History = styled.div`
   display: flex;
   align-content: flex-end;
   flex-direction: column-reverse;
-  height: calc(100vh - 70px);
+  height: calc(100% - 70px);
   overflow-y: scroll;
+  position: relative;
 `
 
 export function MessageHistory ({ messages }) {
