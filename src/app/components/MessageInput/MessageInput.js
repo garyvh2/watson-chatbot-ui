@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const MessageInputContainer = styled.div`
+  position: sticky;
   padding: 2px;
 `
 
