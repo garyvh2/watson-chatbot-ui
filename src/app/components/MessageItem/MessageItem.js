@@ -18,12 +18,11 @@ const MessageText = styled.div`
   margin: 0 20px;
   font-size: initial;
   width: 60%;
-  color: #fff;
   position: relative;
   padding: 10px;
   border-radius: 0.25em;
-  color: ${props => props.sender ? '#000' : '#fff'};
-  background: ${props => props.sender ? '#F3F5F7' : '#1676F3'};
+  color: ${props => props.sender ? '#BBBCBD' : '#BBBCBD'};
+  background: ${props => props.sender ? '#1F232A' : '#044AA4'};
   min-height: 40px;
 `
 const Title = styled.span`

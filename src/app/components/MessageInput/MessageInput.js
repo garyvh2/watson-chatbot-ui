@@ -9,7 +9,8 @@ const MessageInputContainer = styled.div`
 
 const Input = styled.input`
   border-radius: 0.25em;
-  background: #DBDFE4;
+  background: #1F232A;
+  color: #BBBCBD;
   border: none;
   margin: 10px;
   padding: 2px;
@@ -26,14 +27,15 @@ const Send = styled.button`
   width: 80px;
   padding: 2px;
   display: inline-block;
-  background: #F2F5F7;
-  color: #267FF3;
+  font-weight: bold;
+  background: #1F232A;
+  color: #BBBCBD;
   border: none;
   &:hover {
-    background: #D2DDE4;
+    background: #151C28;
   }
   &:active {
-    background: #DDE9F7;
+    background: #0C1421;
   }
 `
 
@@ -44,8 +46,14 @@ export function MessageInput ({ send }) {
       <Input
         value={message}
         onChange={e => setMessage(e.target.value)}
+        onKeyUp={e => {
+          if (e.keyCode === 13) {
+            setMessage('')
+            send(message)
+          }
+        }}
       ></Input>
-      <Send onClick={() => {
+      <Send disabled={!message} onClick={() => {
         setMessage('')
         send(message)
       }}>Send</Send>
